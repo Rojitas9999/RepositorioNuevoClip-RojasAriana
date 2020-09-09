@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head> 
+<body>
+    
+<!------------------------------------------------------------CSS----------------------------------------------------------->
+<style>
+
+img
+{
+    border-radius: 10px;
+    margin-left: 30px;
+    
+}
+
+body
+{
+    background: #FEAC5E; 
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); 
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+
+
+}
+
+h1
+{
+    color: white;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+h3{
+    color: white;
+}
+
+</style>
+
+<!------------------------------------------------------------SCRIPT----------------------------------------------------------->
+
+<script>
+    cont=0;
+    var nombre=prompt("Introduzca su Nombre");
+    while(cont < 5) {
+
+
+	
+    var palabra=prompt("Soy una fruta y soy rica en Vitamina C y E . Ayudo a proteger la vista y soy un aliado para cuidar tu piel.");
+
+    if(palabra=='kiwi') {
+    alert("Acertaste,  " + nombre + '  ¡Muy bien jugado!')
+    document.write('<center><h1>GANASTE ' + nombre+ ' </h1></center>')
+    document.write('<center><h3>¡Muy bien hecho, te felicito!<br></h3></center>')
+    document.write("<img src='https://media.giphy.com/media/xhJrTEhAnMzUQ/giphy.gif' width='300'>");
+    document.write("<img src='https://media.giphy.com/media/3osxY5KeIhh4WzQ6ti/giphy.gif' width='630'>");
+    document.write("<img src='https://media.giphy.com/media/85PCjoD4i0yNW/giphy.gif' width='300'>");
+    cont = 0;
+		break;}
+
+    else
+    {
+
+
+      if(cont==0)
+        {
+            alert('¡Mal! , 1 Pista: Tiene muchas pepas');
+          cont++;
+        }
+		
+        else if(cont==1)
+        {
+           alert('¡Mal! , 2 Pista: Es de color cafe por fuera');
+           cont++;
+        }
+        
+    
+        else if(cont==2)
+        {
+          alert('Mal , 3 Pista: Es color verde por dentro'); 
+          cont++;
+        }
+		 
+          
+        else if(cont==3)
+        {
+           alert('Mal , 4 Pista: Esta fruta...empieza con K'); 
+           cont++;
+        }
+
+        else if(cont==4)
+        {
+           alert('Lo siento, No hay màs pistas... has agotado el número de intentos'); 
+           cont++;
+        }
+
+    }
+         if(cont>4)
+        {
+            alert("La Adivinanza,  " + nombre + '  era... ¡kiwi!');
+            
+            document.write('<center><h1>PERDISTE ' + nombre + ' <br></h1></center>')
+            document.write('<center><h3>Suerte para la próxima...<br></h3></center>')
+    document.write("<img src='https://media.giphy.com/media/xhJrTEhAnMzUQ/giphy.gif' width='300'>");
+    document.write("<img src='https://media.giphy.com/media/3osxY5KeIhh4WzQ6ti/giphy.gif' width='630'>");
+    document.write("<img src='https://media.giphy.com/media/85PCjoD4i0yNW/giphy.gif' width='300'>");
+        } 
+
+        
+}
+
+</script>
+
+
+<script type="text/javascript">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="sweetAlert.js"></script>
+</body>
+</html>
